@@ -155,6 +155,8 @@ document.getElementById('myForm').onsubmit = function (e) {
         if (formObject[i].checked) {
             foods[i] = true;
             check++;
+        } else {
+            foods[i] = false
         }
     }
     if (check >= 2) {
